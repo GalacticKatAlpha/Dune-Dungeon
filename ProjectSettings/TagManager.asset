@@ -11,8 +11,8 @@ TagManager:
   - Walls
   - Water
   - UI
-  - 
-  - 
+  - Actor
+  - Blocking
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back Floor
+    uniqueID: 3968711943
+    locked: 0
   - name: Floor
     uniqueID: 2800235959
     locked: 0
@@ -46,6 +49,9 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 967150601
+    locked: 0
+  - name: Props
+    uniqueID: 678926483
     locked: 0
   - name: Default
     uniqueID: 0

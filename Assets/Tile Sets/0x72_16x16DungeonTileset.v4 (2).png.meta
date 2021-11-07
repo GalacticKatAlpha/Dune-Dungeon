@@ -691,7 +691,7 @@ TextureImporter:
     second: 0x72_16x16DungeonTileset.v4 (2)_236
   - first:
       213: -2945112410688102400
-    second: 0x72_16x16DungeonTileset.v4 (2)_237
+    second: player_0
   - first:
       213: 96747139914632214
     second: 0x72_16x16DungeonTileset.v4 (2)_238
@@ -746,7 +746,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -5116,7 +5116,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_237
+      name: player_0
       rect:
         serializedVersion: 2
         x: 112
