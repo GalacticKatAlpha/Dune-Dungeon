@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
+    private Rigidbody2D rb2;
 
     private void Start()
     {
