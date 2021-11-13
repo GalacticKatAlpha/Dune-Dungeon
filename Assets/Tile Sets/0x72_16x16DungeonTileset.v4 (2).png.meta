@@ -595,7 +595,7 @@ TextureImporter:
     second: 0x72_16x16DungeonTileset.v4 (2)_204
   - first:
       213: -4693427816965579855
-    second: 0x72_16x16DungeonTileset.v4 (2)_205
+    second: chest_1
   - first:
       213: 4256322357106970660
     second: 0x72_16x16DungeonTileset.v4 (2)_206
@@ -640,7 +640,7 @@ TextureImporter:
     second: 0x72_16x16DungeonTileset.v4 (2)_219
   - first:
       213: -6000456486062848891
-    second: 0x72_16x16DungeonTileset.v4 (2)_220
+    second: chest_0
   - first:
       213: 7952756139849542073
     second: 0x72_16x16DungeonTileset.v4 (2)_221
@@ -4339,7 +4339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_205
+      name: chest_1
       rect:
         serializedVersion: 2
         x: 224
@@ -4654,7 +4654,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_220
+      name: chest_0
       rect:
         serializedVersion: 2
         x: 224
