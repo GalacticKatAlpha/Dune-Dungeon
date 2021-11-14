@@ -44,8 +44,16 @@ public class GameManager : MonoBehaviour
     }
     public void LoadState()
     {
+        if(!PlayerPrefs.HasKey("SaveState"))
+            return;
+
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
-        
+
+        // Change player skin
+        pesos = int.Parse(data[1]);
+        experience = int.Parse(data[2]);
+        //Change the weapon Level
+
         Debug.Log("LoadState");
     }
 }
