@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        SceneManager.sceneLoaded += SaveState;
+        SceneManager.sceneLoaded += LoadState;
     }
 
     // Resources
@@ -18,42 +21,21 @@ public class GameManager : MonoBehaviour
 
     // References
     public Player player;
-    // public weapon weapon...
+    // public weapon weapon..
 
-    //Logic
+    // Logic
     public int pesos;
     public int experience;
 
     // Save State
-    /*
-     * INT preferedSkin
-     * INT pesos
-     * INT experience
-     * INT weaponLevel
-     */
-    public void SaveState()
+    public void SaveState(Scene s, LoadSceneMode mode)
     {
-        string s = "";
-
-        s += "0" + "|";
-        s += pesos.ToString() + "|";
-        s += experience.ToString() + "|";
-        s += "0";
-
-        PlayerPrefs.SetString("SaveState", s);
+        Debug.Log("SaveSate");
     }
-    public void LoadState()
+    public void LoadState(Scene s, LoadSceneMode mode)
     {
-        if(!PlayerPrefs.HasKey("SaveState"))
-            return;
-
-        string[] data = PlayerPrefs.GetString("SaveState").Split('|');
-
-        // Change player skin
-        pesos = int.Parse(data[1]);
-        experience = int.Parse(data[2]);
-        //Change the weapon Level
-
         Debug.Log("LoadState");
     }
+
+
 }
