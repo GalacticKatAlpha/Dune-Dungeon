@@ -59,6 +59,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Actor
+    uniqueID: 2660873017
+    locked: 0
+  - name: Weapon
+    uniqueID: 973203777
+    locked: 0
   - name: Foreground walls
     uniqueID: 2678402393
     locked: 0

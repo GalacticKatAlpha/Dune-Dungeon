@@ -10,7 +10,7 @@ public class FloatingText
     public float duration;
     public float lastShown;
 
-    public void show()
+    public void Show()
     {
         active = true;
         lastShown = Time.time;
