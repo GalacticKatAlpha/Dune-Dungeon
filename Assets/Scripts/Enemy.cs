@@ -55,7 +55,7 @@ public class Enemy : Mover
 
         // Check for overlaps
         collidingWithPlayer = false;
-        BoxCollider.OverlapCollider(filter, hits);
+        boxCollider.OverlapCollider(filter, hits);
         for (int i = 0; i < hits.Length; i++)
         {
             if (hits[i] == null)
