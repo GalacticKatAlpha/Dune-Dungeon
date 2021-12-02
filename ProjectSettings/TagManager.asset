@@ -63,6 +63,9 @@ TagManager:
   - name: Actor
     uniqueID: 2660873017
     locked: 0
+  - name: Sombero
+    uniqueID: 2819982465
+    locked: 0
   - name: Weapon
     uniqueID: 973203777
     locked: 0
