@@ -697,13 +697,13 @@ TextureImporter:
     second: NPC_6
   - first:
       213: 802871526941682105
-    second: NOC_7
+    second: NPC_7
   - first:
       213: 1997911490882210524
-    second: NPC_11
+    second: player_1
   - first:
       213: 5079349004121626858
-    second: NPC_12
+    second: player_2
   - first:
       213: -3149986564292760847
     second: NPC_13
@@ -4633,7 +4633,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NOC_7
+      name: NPC_7
       rect:
         serializedVersion: 2
         x: 144
@@ -4654,7 +4654,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_11
+      name: player_1
       rect:
         serializedVersion: 2
         x: 160
@@ -4675,7 +4675,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_12
+      name: player_2
       rect:
         serializedVersion: 2
         x: 176
