@@ -10,6 +10,8 @@ public class Player : Mover
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        DontDestroyOnLoad(gameObject);
     }
 
     private void FixedUpdate()
@@ -23,5 +25,25 @@ public class Player : Mover
     public void SwapSprite(int skinId)
     {
         spriteRenderer.sprite = GameManager.instance.playerSprites[skinId];
+    }
+    public void OnLevelUp()
+    {
+        maxHitpoint++;
+        hitpoint = maxHitpoint;
+    }
+    public void SetLevel(int level)
+    {
+        for (int i = 0; i < level; i++)
+            OnLevelUp();
+    }
+    public void Heal(int healingAmount)
+    {
+        hitpoint += healingAmount;
+        if (hitpoint > maxHitpoint)
+            hitpoint = maxHitpoint;
+        else
+        {
+            GameManager.instance.ShowText("+" + healingAmount.ToString() + "hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
+        }
     }
 }

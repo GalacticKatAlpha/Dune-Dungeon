@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
         if (GameManager.instance != null)
         {
             Destroy(gameObject);
+            Destroy(player.gameObject);
+            Destroy(floatingTextManager.gameObject);
             return;
         }
 
@@ -56,6 +58,54 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    private void Update()
+    {
+        Debug.Log(GetCurrentLevel());
+    }
+
+    // Experience System
+    public int GetCurrentLevel()
+    {
+        int r = 0;
+        int add = 0;
+
+        while (experience >= add)
+        {
+            add += xpTable[r];
+            r++;
+
+            if (r == xpTable.Count) // Max Level
+                return r;
+        }
+
+        return r;
+    }
+    public int GetXpToLevel(int level)
+    {
+        int r = 0;
+        int xp = 0;
+
+        while (r < level)
+        {
+            xp += xpTable[r];
+            r++;
+        }
+
+        return xp;
+    }
+    public void GrantXp(int xp)
+    {
+        int currlevel = GetCurrentLevel();
+        experience += xp;
+        if (currlevel < GetCurrentLevel())
+            OnLevelUp();
+    }
+    public void OnLevelUp()
+    {
+        Debug.Log("Level up!");
+        player.OnLevelUp();
+    }
+
     // Save State
     /*
      * INT preferedSkin
@@ -83,10 +133,14 @@ public class GameManager : MonoBehaviour
 
         // Change player skin
         pesos = int.Parse(data[1]);
+
+        // Experience
         experience = int.Parse(data[2]);
+        if(GetCurrentLevel() !=1)
+            player.SetLevel(GetCurrentLevel());
         // Change the weapon Level
         weapon.SetWeaponLevel (int.Parse(data[3]));
 
-        Debug.Log("LoadState");
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
     }
 }
