@@ -10,8 +10,7 @@ public class FloatingTextManager : MonoBehaviour
 
     private List<FloatingText> floatingTexts = new List<FloatingText>();
 
-
-    private void update()
+    private void Update()
     {
         foreach (FloatingText txt in floatingTexts)
             txt.UpdateFloatingText();
@@ -25,7 +24,7 @@ public class FloatingTextManager : MonoBehaviour
         floatingText.txt.fontSize = fontSize;
         floatingText.txt.color = color;
 
-        floatingText.go.transform.position = Camera.main.WorldToScreenPoint(position); // Transfer world space to screen space so we can use it in the UI
+        floatingText.go.transform.position = Camera.main.WorldToScreenPoint(position);
         floatingText.motion = motion;
         floatingText.duration = duration;
 
