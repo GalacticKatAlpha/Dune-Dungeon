@@ -586,7 +586,7 @@ TextureImporter:
     second: 0x72_16x16DungeonTileset.v4 (2)_201
   - first:
       213: -4326311078063168502
-    second: 0x72_16x16DungeonTileset.v4 (2)_202
+    second: boss_0
   - first:
       213: 5796825455795086554
     second: 0x72_16x16DungeonTileset.v4 (2)_203
@@ -607,7 +607,7 @@ TextureImporter:
     second: 0x72_16x16DungeonTileset.v4 (2)_208
   - first:
       213: 8410147559283395885
-    second: 0x72_16x16DungeonTileset.v4 (2)_209
+    second: enemy_1
   - first:
       213: -677833382483332792
     second: 0x72_16x16DungeonTileset.v4 (2)_210
@@ -3940,7 +3940,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_202
+      name: boss_0
       rect:
         serializedVersion: 2
         x: 160
@@ -4087,7 +4087,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_209
+      name: enemy_1
       rect:
         serializedVersion: 2
         x: 32
