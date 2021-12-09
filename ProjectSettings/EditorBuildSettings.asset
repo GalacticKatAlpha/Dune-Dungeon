@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1-1.unity
     guid: ef18998740a7dc54294c0aec11e06603
+  - enabled: 1
+    path: Assets/Scenes/HealingArea.unity
+    guid: aea1e89d6b6104946a2e7e5bf96c51a9
+  - enabled: 1
+    path: Assets/Scenes/1-Bossroom.unity
+    guid: 1b19c1b80040dad44b62a694d817a0a1
   m_configObjects: {}

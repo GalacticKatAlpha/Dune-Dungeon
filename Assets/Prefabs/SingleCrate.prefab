@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8258909854873213376}
   - component: {fileID: 2724700354543559453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: crate_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8799185986960084402}
   - component: {fileID: 7733145313220098355}
   - component: {fileID: -4505248657093226259}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SingleCrate
   m_TagString: Fighter
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1255643240041927204}
   - component: {fileID: 2668402630540880279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: crate_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

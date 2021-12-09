@@ -418,13 +418,13 @@ TextureImporter:
     second: enemy_0
   - first:
       213: -6691033743483835597
-    second: 0x72_16x16DungeonTileset.v4 (2)_146
+    second: enemy1
   - first:
       213: 4387324285053912951
-    second: 0x72_16x16DungeonTileset.v4 (2)_147
+    second: enemy_2
   - first:
       213: -3529382786255929839
-    second: 0x72_16x16DungeonTileset.v4 (2)_148
+    second: enemy_3
   - first:
       213: 7376596912920195137
     second: 0x72_16x16DungeonTileset.v4 (2)_149
@@ -460,10 +460,10 @@ TextureImporter:
     second: 0x72_16x16DungeonTileset.v4 (2)_159
   - first:
       213: 5866847518652167068
-    second: 0x72_16x16DungeonTileset.v4 (2)_160
+    second: enemy4
   - first:
       213: -305006407107071845
-    second: 0x72_16x16DungeonTileset.v4 (2)_161
+    second: enemy_5
   - first:
       213: 3552886023012526283
     second: 0x72_16x16DungeonTileset.v4 (2)_162
@@ -3142,7 +3142,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_146
+      name: enemy1
       rect:
         serializedVersion: 2
         x: 32
@@ -3163,7 +3163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_147
+      name: enemy_2
       rect:
         serializedVersion: 2
         x: 48
@@ -3184,7 +3184,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_148
+      name: enemy_3
       rect:
         serializedVersion: 2
         x: 64
@@ -3247,7 +3247,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_160
+      name: enemy4
       rect:
         serializedVersion: 2
         x: 0
@@ -3268,7 +3268,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v4 (2)_161
+      name: enemy_5
       rect:
         serializedVersion: 2
         x: 16
