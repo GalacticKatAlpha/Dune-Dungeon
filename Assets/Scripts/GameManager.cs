@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(floatingTextManager.gameObject);
-            Destroy(hud);
-            Destroy(menu);
+            Destroy(Hud);
+            Destroy(Menu);
             return;
         }
 
@@ -35,8 +35,8 @@ public class GameManager : MonoBehaviour
     public FloatingTextManager floatingTextManager;
     public RectTransform hitpointBar;
     public Animator deathMenuAnim;
-    public GameObject hud;
-    public GameObject menu;
+    public GameObject Hud;
+    public GameObject Menu;
 
     // Logic
     public int pesos;
@@ -131,7 +131,7 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         deathMenuAnim.SetTrigger("Hide");
-        UnityEngine.SceneManagement.SceneManager.LoadScene("StartArea");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("1-Start");
         player.Respawn();
     }
 
